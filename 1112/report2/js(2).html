@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>자기소개</title>
+    <style>
+        body { font-family: Arial, sans-serif; line-height: 1.6; margin: 0; padding: 20px; }
+        .container { max-width: 600px; margin: 0 auto; }
+        img { max-width: 50%; height: auto; }
+    </style>
+</head>
+<body>
+    <div id="app"></div>
+
+    <script>
+        const app = document.getElementById('app');
+
+        function createIntro(name, age, major, hobbies, imageSrc) {
+            return `
+                <div class="container">
+                    <h1 style="font-size: 24px;">${name}의 자기소개</h1>
+                    <img src="${imageSrc}" alt="${name}의 사진">
+                    <p style="font-size: 16px;" id="intro-text">안녕하세요, 경성대학교에서 ${major}을 전공하고 있고, 웹 개발을 공부하고 있는 ${name}입니다. </p>
+                    <ul style="font-size: 14px;">
+                        <li>나이: ${age}세</li>
+                        <li>전공: ${major}</li>
+                        <li>취미: ${hobbies.join(', ')}</li>
+                    </ul>
+                    <button onclick="changeTextColor('red')">빨간색</button>
+                    <button onclick="changeTextColor('blue')">파란색</button>
+                    <button onclick="changeTextColor('green')">초록색</button>
+                </div>
+            `;
+        }
+
+        function changeTextColor(color) {
+            const textElement = document.getElementById('intro-text');
+            textElement.style.color = color;
+        }
+
+        const imageUrl = "me.jpg";
+
+        app.innerHTML = createIntro('김규태', 24, '소프트웨어', ['코딩', '독서'], imageUrl);
+    </script>
+</body>
+</html>
