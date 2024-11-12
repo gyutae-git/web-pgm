@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>자기소개 - Tailwind</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="custom.css" rel="stylesheet">
+    <style>
+        .profile-image {
+            width: 200px; 
+            height: 200px; 
+            border-radius: 50%; 
+            object-fit: cover; 
+            margin-bottom: 1rem; 
+        }
+    </style>
+</head>
+<body class="bg-gray-100 p-8">
+    <div class="max-w-md mx-auto bg-white rounded-xl shadow-md overflow-hidden md:max-w-2xl p-6">
+        <img src="me.jpg" alt="김규태의 프로필 사진" class="profile-image mx-auto"> <!-- 프로필 사진 추가 -->
+        <h1 class="text-2xl font-bold mb-4">김규태의 자기소개</h1>
+        <p class="text-gray-600 mb-4">안녕하세요, 웹 개발을 공부하고 있는 김규태입니다.</p>
+        <ul class="space-y-2">
+            <li class="text-gray-700">나이: 24세</li>
+            <li class="text-gray-700">전공: 소프트웨어</li>
+            <li class="text-gray-700">취미: 코딩, 독서</li>
+        </ul>
+    </div>
+</body>
+</html>
