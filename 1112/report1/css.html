@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>자기소개 - 순수 HTML/CSS</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #333;
+        }
+        ul {
+            padding-left: 20px;
+        }
+        .profile-image {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            object-fit: cover;
+            display: block;
+            margin: 0 auto 20px;
+            border: 3px solid #333;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="me.jpg" alt="김규태의 프로필 사진" class="profile-image">
+        <h1>김규태의 자기소개</h1>
+        <p>안녕하세요, 웹 개발을 공부하고 있는 김규태입니다.</p>
+        <ul>
+            <li>나이: 24세</li>
+            <li>전공: 소프트웨어</li>
+            <li>취미: 코딩, 독서</li>
+        </ul>
+    </div>
+</body>
+</html>
