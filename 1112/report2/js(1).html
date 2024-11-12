@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>자기소개 - JavaScript (DOM)</title>
+</head>
+<body>
+    <div id="app"></div>
+
+    <script>
+        const app = document.getElementById('app');
+        
+        app.innerHTML = `
+            <h1>김규태의 자기소개</h1>
+            <p>안녕하세요, 웹 개발을 공부하고 있는 김규태입니다.</p>
+            <ul>
+                <li>나이: 24세</li>
+                <li>전공: 소프트웨어</li>
+                <li>취미: 코딩, 독서</li>
+            </ul>
+            <button onclick="toggleDetails()">더 알아보기</button>
+            <div id="details" style="display: none;">
+                <p>저는 웹 프로그래밍을 좋아하며, JavaScript에 관심이 많아요!</p>
+            </div>
+        `;
+
+        function toggleDetails() {
+            const details = document.getElementById('details');
+            if (details.style.display === 'none') {
+                details.style.display = 'block';
+            } else {
+                details.style.display = 'none';
+            }
+        }
+    </script>
+</body>
+</html>
