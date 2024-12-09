@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>한국항공우주산업(KAI) 취업 정보</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background: #fff;
+            color: #001f3f;
+        }
+        header {
+            background: #fff;
+            color: #001f3f;
+        }
+        .card {
+            background: rgba(0, 31, 63, 0.1);
+            border: none;
+            color: #001f3f;
+        }
+        .list-group-item {
+            background: rgba(0, 31, 63, 0.1);
+            border: none;
+            color: #001f3f;
+        }
+        footer {
+            background: #f1f1f1;
+            color: #001f3f;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            height: 60px;
+        }
+        a {
+            color: #001f3f;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .logo {
+            max-width: 250px;
+        }
+        .navbar {
+            background: #f1f1f1 !important;
+            padding: 10px 20px;
+        }
+        .navbar-nav .nav-item {
+            margin-right: 15px;
+        }
+    </style>
+    <script>
+        function showContent(sectionId) {
+            document.querySelector('.hero-section').style.display = 'none';
+            const sections = document.querySelectorAll('.dynamic-section');
+            sections.forEach(section => section.style.display = 'none');
+
+            const selectedSection = document.getElementById(sectionId);
+            if (selectedSection) {
+                selectedSection.style.display = 'block';
+            }
+        }
+    </script>
+</head>
+<body>
+    <header class="text-center py-4">
+        <img src="logo.jpg" alt="KAI 로고" class="logo mb-3">
+        <h1>한국항공우주산업(KAI)</h1>
+        <p>새로운 시대를 열어가기 위한 KAI의 도전은 현재진행형입니다.</p>
+    </header>
+
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container">
+            <a class="navbar-brand" href="#">메뉴</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" onclick="showContent('intro')">회사 소개</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" onclick="showContent('opportunities')">기회</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" onclick="showContent('requirements')">자격 요건</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" onclick="showContent('process')">채용 절차</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" onclick="showContent('resources')">유용한 자료</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container my-5 text-center hero-section" style="display: block;">
+        <div style="background: #fff; border-radius: 10px; padding: 50px;">
+            <h2 style="font-size: 2.5rem; font-weight: bold;">새로운 시대를 열어가기 위한 KAI의 도전은 현재진행형입니다.</h2>
+            <p style="font-size: 1.2rem; margin-top: 20px;">대한민국 항공우주산업의 시작이자 미래</p>
+        </div>
+    </div>
+
+    <div class="container my-5">
+        <div id="intro" class="dynamic-section" style="display: none;">
+            <div class="card">
+                <div class="card-body">
+                    <h2 class="card-title">회사 소개</h2>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">한국항공우주산업(KAI)은 대한민국의 대표적인 항공우주 방위산업체로, 항공기 설계, 제작, 유지보수 및 관련 소프트웨어 개발을 포함한 다양한 사업을 수행하고 있습니다. 최신 기술을 기반으로 국내외 시장에서 큰 영향력을 발휘하고 있습니다.</li>
+                        <li class="list-group-item">KAI는 지난 40여 년간 KT-1 기본훈련기, T-50 고등훈련기, 수리온 기동헬기 등 다양한 항공기를 성공적으로 개발하며 국가 안보와 항공 전력 강화에 기여해 왔습니다. 현재는 KF-21 한국형 전투기와 첨단 소형무장헬기(LAH)의 개발에도 주력하고 있으며, 우주 분야에서도 다목적실용위성 및 차세대중형위성 개발을 통해 사업 영역을 확장하고 있습니다. 이러한 도전과 혁신을 통해 KAI는 글로벌 경쟁력을 갖춘 대한민국 대표 항공우주기업으로 자리매김하고 있습니다.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div id="opportunities" class="dynamic-section" style="display: none;">
+            <div class="card">
+                <div class="card-body">
+                    <h2 class="card-title">소프트웨어 엔지니어를 위한 기회</h2>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">항공기 운영 소프트웨어 개발 및 유지보수</li>
+                        <li class="list-group-item">임베디드 시스템 프로그래밍</li>
+                        <li class="list-group-item">AI 및 머신러닝을 활용한 데이터 분석</li>
+                        <li class="list-group-item">시뮬레이션 및 테스트 자동화</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div id="requirements" class="dynamic-section" style="display: none;">
+            <div class="card">
+                <div class="card-body">
+                    <h2 class="card-title">필요 역량 및 자격 요건</h2>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">프로그래밍 언어: C, C++, Python, Java</li>
+                        <li class="list-group-item">임베디드 시스템 및 RTOS에 대한 이해</li>
+                        <li class="list-group-item">항공기 제어 알고리즘 및 소프트웨어 개발 경험</li>
+                        <li class="list-group-item">협업 및 문제 해결 능력</li>
+                        <li class="list-group-item">영어 능력: 기술 문서 작성 및 읽기 가능 수준</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div id="process" class="dynamic-section" style="display: none;">
+            <div class="card">
+                <div class="card-body">
+                    <h2 class="card-title">채용 절차</h2>
+                    <ol class="list-group list-group-numbered">
+                        <li class="list-group-item">온라인 지원서 제출</li>
+                        <li class="list-group-item">서류 심사</li>
+                        <li class="list-group-item">코딩 테스트 및 기술 면접</li>
+                        <li class="list-group-item">최종 면접</li>
+                        <li class="list-group-item">입사 확정</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+
+        <div id="resources" class="dynamic-section" style="display: none;">
+            <div class="card">
+                <div class="card-body">
+                    <h2 class="card-title">유용한 자료 및 링크</h2>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item"><a href="https://www.koreaaero.com/KO/Default.aspx" target="_blank">KAI 공식 웹사이트</a></li>
+                        <li class="list-group-item"><a href="https://www.koreaaero.com/KO/Recruit/HRSystem.aspx" target="_blank">채용 정보</a></li>
+                        <li class="list-group-item"><a href="https://github.com/" target="_blank">GitHub - 프로젝트 관리 및 코드 공유</a></li>
+                        <li class="list-group-item"><a href="https://www.acmicpc.net/" target="_blank">코딩 학습 플랫폼</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="text-center py-3">
+        <p> 2024 한국항공우주산업(KAI) 취업 가이드. 출처 한국항공우주산업(KAI) 사이트.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
